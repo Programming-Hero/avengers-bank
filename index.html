@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Fontend Page Template -->
+
+    <div id="login-area">
+        <h1 class="text-center">Welcome to Avengers Bank</h1>
+        <div class="submit-area">
+            <h3>Login</h3>
+            <br>
+            <div>
+                <input type="text" class="form-control" placeholder="Email">
+                <br>
+                <input type="password" class="form-control" placeholder="Password">
+                <br>
+                <button id="login" class="btn btn-success">Enter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- transaction area  -->
+
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="currentDeposit">00</span> </h2>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id="currentWithdraw">00</span> </h2>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="currentBalance">1240</span> </h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <br>
+                    <input id="depositAmount" class="form-control" placeholder="enter your deposit amount">
+                    <br>
+                    <button id="depositBtn" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <br>
+                    <input id="submitAmount" type="text" class="form-control" placeholder="enter your withdraw amount">
+                    <br>
+                    <button id="withdrawBtn" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/code.js"></script>
+
+</body>
+
+</html>
